@@ -1,0 +1,44 @@
+* {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+	border: 1px solid gray;
+	width: 100%; 
+	margin: 0 auto;
+	padding: 10px;
+}
+
+h1 {
+	font-size:1.5em;
+	margin-top:0px;
+	margin-bottom:10px;
+	text-align: center;
+}
+
+form {
+	display:block;
+	margin: 0 auto;
+	text-align:center;
+	width:100%;
+}
+
+.form-element {
+	display:block;
+	margin:0 auto;
+	margin-top:5px;
+}
+
+button {
+	background-color:orange;
+	font-weight:bold;
+}
+
+@media screen and (min-width: 640px) {
+	body {
+		width:50%;
+	}
+	form {
+		width:50%;
+	}
+}
