@@ -17,8 +17,11 @@ $(document).ready(function(event){
 		if (data.items) {
 			data.items.forEach(function(item) {
 				resultsHTML += '<div class="result-item"><h2>' + item.snippet.title + 
-				'</h2><a href="https://www.youtube.com/watch?v=' + item.id.videoId +
-				'"><img src="' + item.snippet.thumbnails.medium.url + '"></a></div>'})
+				'</h2><a target="_blank" href="https://www.youtube.com/watch?v=' + item.id.videoId +
+				'"><img src="' + item.snippet.thumbnails.medium.url 
+				+ '"></a><p class="channel-link"><a target="_blank" href="https://www.youtube.com/channel/'
+				+ item.snippet.channelId +'">See More Videos From This Channel</a></p></div>'})
+				if ()
 			 } else {
 				resultsHTML = '<p>Sorry, there are no vidoes that match your search</p>'
 			}
